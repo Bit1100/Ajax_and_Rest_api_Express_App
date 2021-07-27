@@ -1,2 +1,4 @@
+#Ignoring the folders to be uploaded
+
 node_modules
 .env
