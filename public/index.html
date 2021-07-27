@@ -1,0 +1,31 @@
+<!DOCTYPE hbs>
+<hbs lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>First hbs Page to get render via NodeJs</title>
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <script src="js/home.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li class="navlist"><a class="navlink getUsers">GET</a></li>
+                    <li class="navlist"><a class="navlink postUser">POST</a></li>
+                    <li class="navlist"><a class="navlink getUser">GET1</a></li>
+                    <li class="navlist"><a class="navlink deleteUser">DELETE1</a></li>
+                    <li class="navlist"><a class="navlink updateUser">UPDATE1</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Users List Here</h1>
+            <section id="apiData"></section>
+        </main>
+        <footer>Copyright &copy; All Rights Reserved.</footer>
+    </body>
+</hbs>
