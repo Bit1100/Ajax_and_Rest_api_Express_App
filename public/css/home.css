@@ -1,121 +1,159 @@
 /* Css Resets  */
-*,::before,::after{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;;
-}
-:root{
-    font-size:16px;
-    --clr:gold;
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    height:100%;
+:root {
+    font-size: 16px;
+    --clr: gold;
 }
 
-body{
-    background-color:black;
-    color:var(--clr);
-    display:flex;
-    flex-direction: column;
-    min-height:100%;
+html {
+    height: 100%;
 }
 
-body::selection{
+body {
     background-color: black;
-    color:var(--clr);
+    color: var(--clr);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
+
+body::selection {
+    background-color: black;
+    color: var(--clr);
+}
+
 
 /* Navbar */
-.navbar{
+
+.navbar {
     background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    position:sticky;
-}
-.navbar .navlist{
-   padding:1rem;
-}
-.navbar .navlist .navlink{
-    font-size:1.5rem;
-    text-decoration:none;
-    color:white;
-}
-.navbar .navlist:hover{
-    background-color:skyblue;
-    color:black;
+    position: sticky;
 }
 
-h1{
+.navbar .navlist {
+    padding: 1rem;
+}
+
+.navbar .navlist .navlink {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navlist:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+h1 {
     text-align: center;
     font-size: 2rem;
-    margin:2rem;
+    margin: 2rem;
 }
 
 
 /* apiData */
-#apiData{
-    min-width:200px;
+
+#apiData {
+    min-width: 200px;
     z-index: 1;
-    padding:2rem 1rem;
-    margin:3rem 1rem;
+    padding: 2rem 1rem;
+    margin: 3rem 1rem;
     font-size: 2rem;
 }
+
 #apiData {
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-wrap: wrap;
-    margin:3rem 1rem;
-    padding:2rem 1rem;
+    margin: 3rem 1rem;
+    padding: 2rem 1rem;
+    min-height: 80vh;
 }
-#apiData  .card{
-    min-width:200px;
-    height:400px;
-    margin:2rem;
-    padding:1.5rem;
-    display:flex;
+
+#apiData .card {
+    min-width: 200px;
+    height: 400px;
+    margin: 2rem;
+    padding: 1.5rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow:  20px 20px 50px rgba(0,0,0,0.5);
-    background-color: rgba(0,0,0,0.2);
-    border-top:1px solid rgba(255,255,255,.5);
-    border-left:1px solid rgba(255,255,255,.5);
-    padding:3rem .2rem;
-}
-#apiData .card h2{
-    font-size: 1.5rem;
-    color:gold;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 3rem 2rem;
+    transition: all 0.4s ease-in-out;
 }
 
+#apiData .card:hover {
+    transform: scale(1.05);
+}
+
+#apiData .card h2 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#apiData .card .content div {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #666;
+}
+
+#apiData .card .content div h2 {
+    margin: 1rem 0;
+    color: gold;
+}
+
+
 /* Footer */
-footer{
-    background-color:brown;
-    font-size:1.5rem;
+
+footer {
+    background-color: brown;
+    font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
-    padding:1rem;
-    margin-top:auto;
+    padding: 1rem;
+    margin-top: auto;
 }
 
 
 /* Utilities */
-.btn{
-    background-color:black;
-    color:var(--clr);
-    font-size:1.6rem;
-    padding:1rem;
-    outline:none;
-    border:4px solid var(--clr);
-    animation:borderclr 2s infinite alternate-reverse;
+
+.btn {
+    background-color: black;
+    color: var(--clr);
+    font-size: 1.6rem;
+    padding: 1rem;
+    outline: none;
+    border: 4px solid var(--clr);
+    animation: borderclr 2s infinite alternate-reverse;
 }
-.heading{
-    color:var(--clr);
+
+.heading {
+    color: var(--clr);
     font-size: 4rem;
-    width:fit-content;
-    margin-top:6rem;
+    width: fit-content;
+    margin-top: 6rem;
     text-align: center;
 }
